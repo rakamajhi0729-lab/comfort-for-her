@@ -2,6 +2,10 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
+  <!-- IMPORTANT: fixes zoom on mobile -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>For You 🤍</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -25,7 +29,7 @@
 const slides = [
   {
     img: "comfort.jpg",
-    text: "Hey love 🤍 I know these days can be tiring and uncomfortable. Please rest, stay warm, and remember I’m right here with you."
+    text: "Hey Sweetheart 🤍 I know these days can be tiring and uncomfortable. Please rest, stay warm, and remember I’m right here with you."
   },
   {
     img: "hug1.jpeg",
@@ -36,12 +40,12 @@ const slides = [
     text: "Stay safe, take care 💗 You are the only one whom my heart chooses, always."
   },
   {
-    img: "little.jpg",
+    img: "little1.jpg",
     text: "You are my little princess 👑🤍 Soft, precious, and deeply loved."
   },
   {
     img: "need.jpeg",
-    text: "I need you just like calm needs silence, just like nights need stars 🤍"
+    text: "I need you just like MOMO needs that JHAL wala CHUTNEY 😋🤍"
   }
 ];
 
@@ -50,7 +54,6 @@ let musicStarted = false;
 const music = document.getElementById("music");
 
 function next() {
-  // start music on first user interaction
   if (!musicStarted) {
     music.play();
     musicStarted = true;
